@@ -1,74 +1,71 @@
-import { Card, CardContent } from '@/components/ui/card';
-import { Code, Users, BookOpen, CheckCircle, MessageCircle, Globe } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React from 'react';
 
-const WhyChoosePriyonix = () => {
-    const features = [
-        {
-            icon: <Code className="text-blue-600 w-8 h-8" />,
-            title: 'Live Coding Sessions',
-            description: 'Hands-on coding experience with real-time guidance from industry experts.'
-        },
-        {
-            icon: <Users className="text-purple-600 w-8 h-8" />,
-            title: 'IIT/NIT Alumni Mentors',
-            description: 'Learn from the best minds who bring industry heartbeat to classroom.'
-        },
-        {
-            icon: <BookOpen className="text-green-600 w-8 h-8" />,
-            title: 'PLMS Platform',
-            description: 'World-class Learning Management System for seamless education.'
-        },
-        {
-            icon: <CheckCircle className="text-orange-500 w-8 h-8" />,
-            title: '100% Placement Guarantee',
-            description: 'Direct industry connections with resume building and mock interviews.'
-        },
-        {
-            icon: <MessageCircle className="text-pink-500 w-8 h-8" />,
-            title: 'Communication Grooming',
-            description: 'Develop professional communication skills for global opportunities.'
-        },
-        {
-            icon: <Globe className="text-indigo-500 w-8 h-8" />,
-            title: 'Global Relevance',
-            description: 'Curriculum designed for international standards and opportunities.'
-        },
-    ];
+const WhyChooseUs = () => {
+  const reasons = [
+    {
+      title: "Industry-Driven Curriculum",
+      description:
+        "Our courses are designed with direct input from industry experts to ensure relevance and applicability.",
+    },
+    {
+      title: "Experienced Mentors & Trainers",
+      description:
+        "Learn from professionals with years of real-world experience in their respective fields.",
+    },
+    {
+      title: "Project-Based Learning",
+      description:
+        "Hands-on experience through real projects that build your portfolio and confidence.",
+    },
+    {
+      title: "End-to-End Career Support",
+      description:
+        "From skill development to job placement, we support you throughout your career journey.",
+    },
+    {
+      title: "A Community of Innovators",
+      description:
+        "Join a thriving community of learners, mentors, and industry professionals.",
+    },
+  ];
 
-    return (
-        <section id="why" className="max-w-7xl mx-auto px-4 py-16">
-            <motion.h2
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-                className="text-4xl font-bold text-center mb-4"
+  return (
+    <section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50">
+      <div className="container mx-auto max-w-7xl">
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+            Why Choose <span className="text-blue-600">Priyonix?</span>
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Explore the reasons that make us the preferred choice for Students and Professionals
+            Aiming to Accelerate their Careers.
+          </p>
+        </div>
+
+        {/* Reasons */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {reasons.map((reason, index) => (
+            <div
+              key={index}
+              className="relative bg-white border border-gray-100 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8"
             >
-                Why Choose <span className="text-gray-400">Priyonix</span>
-            </motion.h2>
-            <p className="text-center mb-12 text-lg text-black">
-                We offer comprehensive training with an industry-driven approach, ensuring you&apos;re ready for the global tech arena.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {features.map((feature, index) => (
-                    <motion.div
-                        key={index}
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: index * 0.2 }}
-                    >
-                        <Card className="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
-                            <CardContent className="flex flex-col items-start">
-                                <div className="mb-4">{feature.icon}</div>
-                                <h3 className="text-xl font-bold mb-2 text-black">{feature.title}</h3>
-                                <p className="text-black">{feature.description}</p>
-                            </CardContent>
-                        </Card>
-                    </motion.div>
-                ))}
+              {/* Number Badge */}
+              <div className="absolute -top-4 -left-4 bg-blue-600 text-white font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+                {index + 1}
+              </div>
+
+              {/* Content */}
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {reason.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">{reason.description}</p>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
-export default WhyChoosePriyonix;
+export default WhyChooseUs;

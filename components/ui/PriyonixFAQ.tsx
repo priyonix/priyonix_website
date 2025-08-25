@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: "How much do the courses cost?",
-    answer: "We offer both free and paid courses. The pricing varies based on the course complexity and duration. Check individual course pages for details.",
+    answer: "We offer paid courses. The pricing varies based on the course complexity and duration. Check individual course pages for details.",
   },
   {
     question: "Is there a live chat or support available?",
@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     question: "How long will I have access to the courses I purchase?",
-    answer: "You will have lifetime access to all the courses you purchase, so you can learn at your own pace anytime.",
+    answer: "Courses will be accessible for the duration of the academic year you enroll in, allowing you to learn at your own pace within that period.",
   },
   {
     question: "Is placement support available after course completion?",
-    answer: "Yes, we offer placement support including mock interviews, resume building, and job referrals for eligible students.",
+    answer: "Yes, we offer placement support including mock interviews, resume building, and job opportunity for eligible students.",
   },
 ];
 

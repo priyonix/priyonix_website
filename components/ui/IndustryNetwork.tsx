@@ -9,15 +9,19 @@ const IndustryNetwork = () => {
       <div className="whitespace-nowrap animate-scroll">
         <div className="flex items-center space-x-16">
           <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
-          <Image src="/IAM.png" alt="Packetlabs" width={150} height={150}/>
           <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
-          <Image src="/IAM.png" alt="Packetlabs" width={150} height={150}/>
           <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
-          <Image src="/IAM.png" alt="Packetlabs" width={150} height={150}/>
           <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
-          <Image src="/IAM.png" alt="Packetlabs" width={150} height={150} />
           <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
-          <Image src="/IAM.png" alt="Packetlabs" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
+          <Image src="/IEEE.png" alt="Epic IT Security" width={150} height={150}/>
         </div>
       </div>
     </div>

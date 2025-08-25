@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Calendar, { CalendarProps } from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { FaClock, FaVideo } from "react-icons/fa";
+import { FaVideo } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
 const isSameDay = (d1: Date, d2: Date) =>
@@ -39,18 +39,18 @@ export default function BookingCalendar() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-black text-black p-4">
       <h1 className="text-3xl font-bold mb-8 text-center text-white">
-        Book a <span className="text-gray-400">Free 1:1 Consultation</span>
+        Book Your Spot <span className="text-gray-400">with Priyonix</span>
       </h1>
 
       <div className="bg-black rounded-xl shadow-md p-6 w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 border border-pink-100">
         {/* Left Panel */}
         <div className="space-y-4">
           <h1 className="text-2xl font-bold text-white">
-            Consultation with <span className="text-gray-400">Priyonix Experts</span>
+            
           </h1>
-          <div className="flex items-center text-white">
+          {/* <div className="flex items-center text-white">
             <FaClock className="mr-2 text-gray-500" /> 45 min
-          </div>
+          </div> */}
           <div className="flex items-center text-white">
             <FaVideo className="mr-2 text-gray-500" /> Web conferencing details provided upon confirmation.
           </div>
@@ -62,7 +62,7 @@ export default function BookingCalendar() {
               className={`px-5 py-2 rounded-lg font-semibold transition ${selectedDate ? "bg-gray-600 text-white hover:bg-blue-700" : "bg-gray-300 text-gray-500 cursor-not-allowed"
                 }`}
             >
-              {selectedDate ? "Book Consultation" : "Select a Date to Continue"}
+              {selectedDate ? "Book Now" : "Select a Date to Continue"}
             </button>
           </div>
         </div>
